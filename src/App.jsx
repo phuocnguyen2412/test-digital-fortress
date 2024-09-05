@@ -1,5 +1,14 @@
+import { Route, Routes } from "react-router-dom";
+import Login from "./pages/LoginPage";
+import DashBoard from "./pages/DashBoard";
+
 function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <Routes>
+      <Route path="/login" element={<Login />} />
+      <Route path="/dashboard" element={<DashBoard />} />
+    </Routes>
+  );
 }
 
 export default App;
